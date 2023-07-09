@@ -1,5 +1,16 @@
-function LisGroup() {
-    return <h1>List Group</h1>
+function ListGroup() {
+  const items = ["New York", "San Francisco", "San Diego", "Colorado", "Tokyo"];
+
+  return (
+    <>
+      <h1>List</h1>
+      <ul className="list-group">
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </>
+  );
 }
 
-export default LisGroup; 
+export default ListGroup;
